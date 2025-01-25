@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    max-height: 100vh;
+    background-color: #ecf2f8;
+}
+
+#overall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+#second-section {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding: 15px 30px 30px 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+#drawers-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}  
+
+#michelle-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    color: hsl(217, 19%, 35%);
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+h4 {
+    color: hsl(217, 19%, 35%);
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+p {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.5;
+}
+
+h4, #date {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+#michelle-section {
+    display: flex;
+    align-items: center;
+}
+
+.michelle-section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1 {
+    display: none;
+}
+
+#share-img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#share-container {
+    background-color: hsl(212, 23%, 69%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: none;
+}
+
+.last-item {
+    background-color:  hsl(217, 19%, 35%);
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 15px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    bottom: 113px;
+}
+
+.last-move {
+    display: none;
+}
+
+#add-text {
+    margin-bottom: 27px;
+}
+
+#share {
+    color: white;
+    letter-spacing: 10px;
+    width: 100px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.fa.fa-facebook-official, .fa.fa-twitter, .fa.fa-pinterest{
+    font-size: 25px; 
+    width: 25px;  
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+#share-img1 {
+    width: 15px;
+    height: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.share-container {
+    background-color: hsl(212, 23%, 69%);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen  and (min-width: 900px){
+    #overall {
+    flex-direction: row;
+    width: 800px;
+    }
+
+    #drawers-img {
+    border-radius: 15px 0 0 15px;
+    width: 400px;
+    height: 397px;
+    }
+
+    #second-section {
+    width: 90%;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    border-radius: 0 15px 15px 0;
+    
+    }
+}
+
+
+
+@media screen  and (min-width: 600px)  {
+    #overall {
+    flex-direction: row;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+
+    }
+
+    #drawers-img {
+    border-radius: 15px 0 0 15px;
+    width: 300px;
+    height: 280px;
+    }
+
+    #second-section {
+    width: 500px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 30px;
+    border-radius: 0 15px 15px 0;
+    height: 280px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    .last-item {
+        border-radius: 15px;
+        width: 200px;
+        position: relative;
+        bottom: 380px;
+        left: 330px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .last-item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 110px;
+        top: 80px; 
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 15px solid  #48556a; 
+        border-bottom: none;
+    }
+
+    .share-container {
+        display: none;
+    }
+
+}
